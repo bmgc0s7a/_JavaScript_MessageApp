@@ -43,3 +43,5 @@ class Message {
         this.#dataTime = dataTime;
     }
 }
+
+export default Message;
