@@ -23,9 +23,7 @@ MessageCRUD.all().forEach(msg => messageList.push(objMsg(msg.id, msg.owner, msg.
 
 const get = () => messageList.slice();
 
-const add = function(owner, message){
-    const id = messageList.length;
-    const dateTime = new Date();
+const add = function(id,owner, message, dateTime){
     messageList.push(objMsg(id, owner, message, dateTime));
     MessageCRUD.save(objStore(id, owner, message, dateTime));
 }

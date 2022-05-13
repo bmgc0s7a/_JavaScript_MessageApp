@@ -2,13 +2,13 @@ class Message {
     #id;
     #owner;
     #message;
-    #dataTime;
+    #dateTime;
 
-    constructor(id, owner, message, dataTime){
+    constructor(id, owner, message, dateTime){
         this.#id = id;
         this.#owner = owner;
         this.#message = message;
-        this.#dataTime = dataTime;
+        this.#dateTime = dateTime;
     }
 
     get id(){
@@ -23,8 +23,8 @@ class Message {
         return this.#message;
     }
 
-    get dataTime(){
-        return this.#dataTime;
+    get dateTime(){
+        return this.#dateTime;
     }
 
     set id(id){
@@ -39,8 +39,8 @@ class Message {
         this.#message = message;
     }
 
-    set dataTime(dataTime){
-        this.#dataTime = dataTime;
+    set dateTime(dateTime){
+        this.#dateTime = dateTime;
     }
 }
 
