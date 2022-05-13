@@ -1,5 +1,5 @@
 import Message from "../model/Message.js";
-import MessageCRUD from "../model/MessageCRUD";
+import MessageCRUD from "../model/MessageCRUD.js";
 
 const messageList = [];
 
