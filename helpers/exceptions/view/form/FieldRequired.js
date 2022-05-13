@@ -1,6 +1,6 @@
 class FieldRequired extends Error{
     constructor(input){
-        super(`Error Input: ${input} required!`);
+        super(`Input ${input} required!`);
     }
 }
 
