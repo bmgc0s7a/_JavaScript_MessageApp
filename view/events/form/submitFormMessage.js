@@ -21,6 +21,7 @@ const submitFormMessage = function(e){
         });
         document.dispatchEvent(newMsg);
         setTimeout(() => {addNewMessage(randomMessage())},8000);
+        qs('#userWriting').remove();
         inputMessage.value = '';
     } catch(e){
         alert(e, ['bg-red-400', 'text-white']);
