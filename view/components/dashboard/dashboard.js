@@ -10,7 +10,6 @@ const dashboard = function(div,msg){
     msg.forEach(msgOne => divMsg(msgDiv,msgOne));
     divDash.append(msgDiv, formNewMessage());
     add(document, 'addNewMessage', addNewMessage);
-    //add(document, 'addNewMessage', randomMessage);
     div.append(divDash);
 }
 

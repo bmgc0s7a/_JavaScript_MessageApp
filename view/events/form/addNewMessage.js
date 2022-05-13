@@ -4,7 +4,6 @@ import { alert } from "../../components/widgets/alert.js";
 import { addPresenter } from "../../../presenter/addPresenter.js";
 
 const addNewMessage = function(e){
-    console.log(e);
     divMsg(qs('#messages'), e.detail);
     alert('Add message', ['bg-green-500', 'text-white']);
     addPresenter(e.detail);

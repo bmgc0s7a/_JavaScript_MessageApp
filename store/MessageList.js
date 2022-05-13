@@ -28,4 +28,9 @@ const add = function(id,owner, message, dateTime){
     MessageCRUD.save(objStore(id, owner, message, dateTime));
 }
 
-export  {get, add};
+const del = function(id){
+    messageList.splice(id, id+1);
+    MessageCRUD.destroy(id);
+}
+
+export  {get, add, del};
