@@ -1,7 +1,7 @@
 import DatabaseRules from "../DatabaseRules/DatabaseRules.js";
 
 class LocalStorage extends DatabaseRules{
-    all = () => Object.entries(window.localStorage).sort((a,b) => a.at(0) > b.at(0));
+    all = () => Object.values(window.localStorage).map(msg => JSON.parse(msg));
     get = (id) => JSON.parse(window.localStorage.getItem(id));
     add = (id, contact) => window.localStorage.setItem(id, JSON.stringify(contact));
     upd = (id,contact) => window.localStorage.setItem(id, JSON.stringify(contact));

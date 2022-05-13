@@ -14,9 +14,14 @@ const objStore = (id, owner, message, dateTime) =>
     }
 }
 
+window.addEventListener('storage', function(e){
+    console.log(e);
+})
+
 MessageCRUD.all().forEach(msg => messageList.push(objMsg(msg.id, msg.owner, msg.message, msg.dateTime)));
 
-const get = () => messageList;
+
+const get = () => messageList.slice();
 
 const add = function(owner, message){
     const id = messageList.length;
